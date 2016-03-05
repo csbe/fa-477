@@ -7,7 +7,7 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class OtherMainClassFX extends Application {
+public class OtherMainClassFX extends Application{
 
 	public static void main(String[] args) {
 		Session.getInstance("first");
@@ -16,9 +16,9 @@ public class OtherMainClassFX extends Application {
 
 	}
 
+
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		/* Scene scene = new Scene(new MitgliedForm()); */
 		Scene scene = new Scene(UiFxml.load("view/mitglied2.fxml").load());
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Parteiverwaltung");
