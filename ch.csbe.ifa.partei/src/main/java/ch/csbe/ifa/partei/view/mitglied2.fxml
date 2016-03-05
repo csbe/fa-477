@@ -34,21 +34,37 @@
                      <children>
                         <TableView fx:id="mitgliedtable" prefHeight="223.0" prefWidth="594.0">
                         	<columns>
-				                <TableColumn fx:id="id" prefWidth="75.0" text="ID" />
-				                <TableColumn fx:id="first" prefWidth="75.0" text="Vorname" />
-				                <TableColumn fx:id="last" prefWidth="75.0" text="Nachname" />
-				                <TableColumn fx:id="wohnort" prefWidth="75.0" text="Wohnort" />
+				                <TableColumn fx:id="id" prefWidth="44.0" text="ID" />
+				                <TableColumn fx:id="first" prefWidth="106.0" text="Vorname" />
+				                <TableColumn fx:id="last" prefWidth="124.0" text="Nachname" />
+				                <TableColumn fx:id="wohnort" prefWidth="152.0" text="Wohnort" />
 				            </columns>
                         </TableView>
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
-          <Tab text="MitgliedErfassen" fx:id="erfassen">
+          <Tab fx:id="erfassen" text="MitgliedErfassen">
             <content>
              	
             </content>
           </Tab>
+            <Tab text="Amt">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="amttable" prefHeight="235.0" prefWidth="600.0">
+                          <columns>
+                              <TableColumn fx:id="mitgliedname" prefWidth="121.0" text="Name" />
+                            <TableColumn fx:id="ebene" prefWidth="143.0" text="Ebene" />
+                            <TableColumn fx:id="bezeichnung" prefWidth="111.0" text="Bezeichnung" />
+                              <TableColumn fx:id="wahldatum" prefWidth="133.0" text="Wahldatum" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
         </tabs>
       </TabPane>
    </center>

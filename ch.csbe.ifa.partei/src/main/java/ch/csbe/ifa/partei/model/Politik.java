@@ -12,6 +12,11 @@ public class Politik extends Amt {
 	
 	@Column(nullable=false)
 	private float gehalt;
+	
+	public Politik() {
+		super();
+	}
+	
 
 	public Politik(float gehalt) {
 		super();
